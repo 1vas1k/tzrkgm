@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             Font font = new Font("Bold", 20, FontStyle.Bold);
             g.DrawString("Льоскін Іван Вадимович", font, brush, new PointF(130, 170));
 
-            // Очищення ресурсів
+            // Creal the resources
             pen.Dispose();
             brush.Dispose();
         }
