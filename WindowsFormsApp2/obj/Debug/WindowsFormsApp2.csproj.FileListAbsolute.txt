@@ -1,0 +1,11 @@
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SquaresForm.resources
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TrianglesForm.resources
