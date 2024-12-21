@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -41,35 +35,24 @@ namespace WindowsFormsApp2
                 // Draw the square with current values
                 g.DrawPolygon(pen, new PointF[] { topLeft, topRight, bottomRight, bottomLeft });
 
-                // Calculate new coordinates for nested square
-                PointF newTopLeft = new PointF(
-                    topLeft.X + (topRight.X - topLeft.X) * P,
-                    topLeft.Y + (bottomLeft.Y - topLeft.Y) * P
-                );
-                PointF newTopRight = new PointF(
-                    topRight.X - (topRight.X - topLeft.X) * P,
-                    topRight.Y + (bottomRight.Y - topRight.Y) * P
-                );
-                PointF newBottomLeft = new PointF(
-                    bottomLeft.X + (bottomRight.X - bottomLeft.X) * P,
-                    bottomLeft.Y - (bottomLeft.Y - topLeft.Y) * P
-                );
-                PointF newBottomRight = new PointF(
-                    bottomRight.X - (bottomRight.X - bottomLeft.X) * P,
-                    bottomRight.Y - (bottomRight.Y - topRight.Y) * P
-                );
-
                 // update points for new square
-                topLeft = newTopLeft;
-                topRight = newTopRight;
-                bottomLeft = newBottomLeft;
-                bottomRight = newBottomRight;
+                topLeft = GetPointOnEdge(topLeft, topRight, P);
+                topRight = GetPointOnEdge(topRight, bottomRight, P);
+                bottomRight = GetPointOnEdge(bottomRight, bottomLeft, P);
+                bottomLeft = GetPointOnEdge(bottomLeft, topLeft, P);
             }
 
             pen.Dispose();
         }
 
-
+        // calculate new points at square sides
+        private PointF GetPointOnEdge(PointF p1, PointF p2, float ratio)
+        {
+            return new PointF(
+                p1.X + (p2.X - p1.X) * ratio,
+                p1.Y + (p2.Y - p1.Y) * ratio
+            );
+        }
 
         private void SquaresForm_Load(object sender, EventArgs e)
         {

@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace WindowsFormsApp1
 {
@@ -21,23 +16,35 @@ namespace WindowsFormsApp1
 
         private void AboutForm_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics for drawing
-            Graphics g = e.Graphics;
+            // Get the Graphics, Pen and Brush
+            Graphics myGraphics = e.Graphics;
+            Pen myPen = new Pen(Color.Black, 2);
+            Brush brushBg = new SolidBrush(Color.Pink);
+            Brush brushLetters = new SolidBrush(Color.Black);
 
-            // Create Pen and Brush
-            Pen pen = new Pen(Color.Black, 2);
-            SolidBrush brush = new SolidBrush(Color.DarkBlue);
+            myGraphics.FillRectangle(brushBg, new Rectangle(100, 140, 400, 80));
 
-            Font font = new Font("Bold", 20, FontStyle.Bold);
-            g.DrawString("Льоскін Іван Вадимович", font, brush, new PointF(130, 170));
-
-            // Creal the resources
-            pen.Dispose();
-            brush.Dispose();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+            //ЛЬОСКІН Л
+            myGraphics.DrawLine(myPen, 110, 200, 120, 150);
+            myGraphics.DrawLine(myPen, 120, 150, 130, 200);
+            //ЛЬОСКІН Ь
+            myGraphics.DrawLine(myPen, 160, 150, 160, 200);
+            Rectangle rectangle = new Rectangle(160, 175, 20, 20);
+            myGraphics.DrawEllipse(myPen, rectangle);
+            //ЛЬОСКІН О
+            myGraphics.FillEllipse(brushLetters, new Rectangle(210, 150, 40, 50));
+            //ЛЬОСКІН С
+            myGraphics.DrawBezier(myPen, new Point(300, 150), new Point(260, 165), new Point(260, 185), new Point(300, 200));
+            //ЛЬОСКІН К
+            myGraphics.DrawLine(myPen, 330, 200, 330, 150);
+            myGraphics.DrawBezier(myPen, new Point(360, 150), new Point(320, 175), new Point(320, 175), new Point(360, 200));
+            //ЛЬОСКІН І
+            myGraphics.DrawLine(myPen, 400, 200, 400, 170);
+            myGraphics.FillEllipse(brushLetters, new Rectangle(392, 150, 15, 15));
+            //ЛЬОСКІН Н
+            myGraphics.DrawLine(myPen, 430, 200, 430, 150);
+            myGraphics.DrawLine(myPen, 430, 175, 460, 175);
+            myGraphics.DrawLine(myPen, 460, 200, 460, 150);
 
         }
 

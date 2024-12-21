@@ -19,7 +19,7 @@ namespace WindowsFormsApp3
 
         }
 
-        private const int Depth = 4; // depth of recursion
+        private int Depth = 4; // depth of recursion
         private const float P = 1 / 3f; // k for determination of intermediate points on the side of the triangle
 
 
@@ -73,6 +73,21 @@ namespace WindowsFormsApp3
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int newDepth) && newDepth >= 0)
+            {
+                Depth = newDepth; // update the depth
+                this.Invalidate(); // render form
+            }
         }
     }
 }
