@@ -146,8 +146,8 @@ namespace WindowsFormsApp4
                 isDragging = false;
             }
         }
-
-        private void Infinity_Moove(object sender, EventArgs e)
+            
+        private void Infinity_Moove(object sender)
         {
             isMooving = true;
             moveTimer.Tick += (s, eventArgs) =>
@@ -196,7 +196,7 @@ namespace WindowsFormsApp4
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Infinity_Moove(sender, EventArgs.Empty);
+            Infinity_Moove(sender);
         }
     }
 }

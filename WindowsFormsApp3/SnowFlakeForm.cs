@@ -68,26 +68,13 @@ namespace WindowsFormsApp3
             }
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Depth = int.Parse(textBox1.Text);
+            this.Invalidate();
         }
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            if (int.TryParse(textBox1.Text, out int newDepth) && newDepth >= 0)
-            {
-                Depth = newDepth; // update the depth
-                this.Invalidate(); // render form
-            }
-        }
     }
 }

@@ -1,0 +1,10 @@
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\UNIVERSITY\KompGraph\labs\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
